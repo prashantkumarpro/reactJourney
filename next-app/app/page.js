@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-
+import About from "./About/page"
 
 
 function page() {
@@ -8,8 +8,11 @@ function page() {
   return (
 
 <>
-<div className="Home"></div>
-<h1>Hellow Next-app</h1>
+<main>
+<About/>
+</main>
+
+
 
     
 </>

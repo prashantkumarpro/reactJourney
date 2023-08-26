@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #201c1c;
+    color: #faf8f8;
     text-decoration: none;
 }
 
@@ -29,30 +29,103 @@ body {
     --color-border: #373737;
 }
 
-.header {
+/* header start  */
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #0a0a0a;
+    overflow: hidden;
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 20px;
-
+    justify-content: space-between;
+    background: var(--color-bg-parimary);
+    border-bottom: 1px dashed rgba(256, 256, 256, .2);
+    padding: 0px 4vw;
+    z-index: 999;
 }
 
 .logo {
-    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: .5s;
+    color: #101010;
 }
 
-.nav {
+.logo span {
+    color: white;
+}
+
+.ham-button {
+    position: absolute;
+    padding: 18px 18px;
+    right: 15px;
+    top: 15px;
+    display: none;
+    font-size: 1.8rem;
+    margin-top: 8px;
+    color: var(--color-white);
+    background: var(--color-bg-parimary);
+}
+
+.ham_menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.ham_close {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.nav-links .links {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.header.nav Link {
-    text-decoration: none;
+ul li {
+    list-style: none;
+    padding: 12px 18px;
+
 }
+
+.hero a .active {
+    color: #0a0a0a;
+
+}
+
+.hero a {
+    display: block;
+    color: var(--color-white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.hero .active {
+    color: #151515;
+}
+
+.hero a:hover {
+    color: #151515;
+}
+
+/* header close  */
 
 .Home {
     width: 100%;
@@ -166,4 +239,7 @@ body {
     /* border: 2px solid var(--color-white); */
     border: 1.5px solid white;
     transition: 0.3s;
+}
+.h1{
+    color:red;
 }
