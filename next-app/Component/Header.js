@@ -4,12 +4,11 @@ import Link from 'next/link'
 function Header() {
   return (
     <>
-      {/* header section start   */}
+   
       <header className="hero">
         <h1 className="logo">port<span>Folio</span> </h1>
         <div className="ham-button">
           <i className="ri-menu-3-line ham_menu" id="ham_menu"></i>
-          {/* <i className="fa-solid fa-bars ham_menu" id="ham_menu"></i>  */}
           <i className="fa-solid fa-xmark ham_close" id="ham_close"></i>
         </div>
 
