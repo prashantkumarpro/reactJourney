@@ -10,22 +10,24 @@ const page = () => {
   const submitHandler = (e) => {
     e.preventDefault()
 
-    if (title == "" && desc == "") {
+    if(title == "" && desc == ""){
       alert(`please write title and desc`)
       return false;
     }
-
+    
     setMainTask([...mainTask, { title, desc }])
     setTitle('')
     setDesc('')
+
+
 
   }
   let deletHandler = (index) => {
     let copyTask = [...mainTask]
     copyTask.splice(index, 1)
     setMainTask(copyTask)
-
-
+   
+    
   }
 
   let rendarTask = <h2 className=' text-center font-semibold'>No task Available</h2>
