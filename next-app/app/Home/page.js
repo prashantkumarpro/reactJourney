@@ -21,7 +21,7 @@ const page = () => {
 
         </div>
       </div>
-      <h1>This is home page </h1>
+   
     </>
   )
 }

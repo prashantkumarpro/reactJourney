@@ -1,12 +1,13 @@
 import './globals.css'
-import Header from "@/Component/Header"
+import Main from '@/Component/Main'
+
 
 export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
       <body>
-        <Header />
+       <Main/>
         {children}</body>
     </html>
   )
