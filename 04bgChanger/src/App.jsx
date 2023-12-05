@@ -13,9 +13,9 @@ function App() {
         console.log(dets.pageX + 'px')
         setCursor = dets.pageX + 'px';
       }}>
-        <div className=" w-5 h-5 absolute bg-white rounded-full" 
-      onMouseMove={dets.pageX}
-       ></div>
+        <div className=" w-5 h-5 absolute bg-white rounded-full"
+          onMouseMove={dets.pageX}
+        ></div>
         <div className='bg-black w-full h-screen duration-200'
           style={{ backgroundColor: color }}>
           <div className="  fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">

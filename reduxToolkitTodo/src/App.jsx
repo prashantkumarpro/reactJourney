@@ -1,5 +1,4 @@
 
-
 import './App.css'
 
 function App() {
@@ -7,8 +6,7 @@ function App() {
 
   return (
     <>
-  
-
+     <h1>Welcome to ReduxTooKit</h1>
     </>
   )
 }
